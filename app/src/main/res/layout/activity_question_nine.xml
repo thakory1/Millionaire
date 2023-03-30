@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionNineActivity"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/moneyEarned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="You earned: $"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_above="@id/radioGroup"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="6dp"
+        android:text="In Doctor Who, what was the signature look of the fourth Doctor, as portrayed by Tom Baker?"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Bow-tie, braces and tweed jacket"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Cape, velvet jacket and frilly shirt"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Wide-brimmed hat and extra long scarf"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Pinstripe suit and trainers"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="Continue"
+        android:textSize="25sp"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>
